@@ -33,7 +33,7 @@ namespace BubbleShort
             Console.WriteLine(" Masukkan elemen array ");
             Console.WriteLine("-----------------------");
 
-            // Pengguna memasukkan elemen pada party 
+            // Pengguna memasukkan elemen pada Array
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");

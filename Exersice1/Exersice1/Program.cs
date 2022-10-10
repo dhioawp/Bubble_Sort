@@ -53,7 +53,7 @@ namespace Exersice1
         {
             for (int i = 1; i < n; i++)
             {
-                for (int DA = 0; DA < n; DA++)
+                for (int DA = 0; DA < n - i; DA++)
                 {
                     if (a[DA] > a[DA + 1])
                     {

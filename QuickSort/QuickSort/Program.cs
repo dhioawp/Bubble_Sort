@@ -1,4 +1,9 @@
-﻿namespace QuickSort
+﻿using System;
+using System.Runtime.Serialization.Formatters;
+using System.Security.Cryptography;
+using System.Xml;
+
+namespace QuickSort
 {
     class program
     {
@@ -34,9 +39,32 @@
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
-            }    
+            }
 
         }
 
+        //swaps the element at index x with the element at index y
+        void swap(int x, int y)
+        {
+            int temp;
+
+            temp = arr[x];
+            arr[x] = arr[y];
+            arr[y] = temp;
+        }
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, j;
+            if (low < high)
+                return;
+
+            //Partition the list into two part:
+            //one containing elements less thath or equal to pivot
+            //Outher containing elements greather than pivot
+
+            i = low + 1;
+            j = high;
+
+        }
     }
 }
